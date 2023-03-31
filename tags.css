@@ -1,0 +1,51 @@
+* {box-sizing: border-box;}
+/* Nome: Yasmin Rodrigues Guedes
+Matrícula: */
+body {font-family: Arial, Helvetica, sans-serif;}
+header {
+    background-color: #eb6fb3; padding: 30px; text-align: center; font-size: 35px; color: #333;
+}
+/* navegação */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover {
+    color: black;
+    background-color: #ddd;
+}
+/* artigo para apenas as 4 primeiras páginas */
+.article-comum {
+    float: right; padding: 20px; width: 71%;
+}
+    aside {
+        width: 29%;
+        float: left; 
+    }
+    
+    img{
+        width: 357px;
+        float: left;
+    }
+
+
+/* Limpa float após a seção */
+section::after {content: ""; display: table; clear: both;}
+
+footer {background-color: #333; padding: 14px 16px; text-align: center;}
+/* mudar a cor de acesso as redes sociais */
+footer a {
+    color: white;
+}
+
+/* Para deixar o site responsivo. */
+
+    @media (max-width: 600px) {nav, article{ width: 100%; height: auto; } }
